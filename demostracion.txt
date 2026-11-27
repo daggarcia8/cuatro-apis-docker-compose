@@ -1,0 +1,174 @@
+Docker Compose version v2.40.3
+Extracto de la ejecución de python demo.py desde la construcción de las imágenes.
+
+ cuatro_apis_verificacion-users  Built
+ cuatro_apis_verificacion-auth  Built
+ cuatro_apis_verificacion-orders  Built
+ cuatro_apis_verificacion-products  Built
+ Network cuatro_apis_verificacion_default  Creating
+ Network cuatro_apis_verificacion_default  Created
+ Volume cuatro_apis_verificacion_products-data  Creating
+ Volume cuatro_apis_verificacion_products-data  Created
+ Volume cuatro_apis_verificacion_users-data  Creating
+ Volume cuatro_apis_verificacion_users-data  Created
+ Volume cuatro_apis_verificacion_auth-data  Creating
+ Volume cuatro_apis_verificacion_auth-data  Created
+ Volume cuatro_apis_verificacion_orders-data  Creating
+ Volume cuatro_apis_verificacion_orders-data  Created
+ Container cuatro_apis_verificacion-orders-1  Creating
+ Container cuatro_apis_verificacion-products-1  Creating
+ Container cuatro_apis_verificacion-users-1  Creating
+ Container cuatro_apis_verificacion-auth-1  Creating
+ Container cuatro_apis_verificacion-orders-1  Created
+ Container cuatro_apis_verificacion-users-1  Created
+ Container cuatro_apis_verificacion-products-1  Created
+ Container cuatro_apis_verificacion-auth-1  Created
+ Container cuatro_apis_verificacion-orders-1  Starting
+ Container cuatro_apis_verificacion-products-1  Starting
+ Container cuatro_apis_verificacion-users-1  Starting
+ Container cuatro_apis_verificacion-auth-1  Starting
+ Container cuatro_apis_verificacion-auth-1  Started
+ Container cuatro_apis_verificacion-products-1  Started
+ Container cuatro_apis_verificacion-users-1  Started
+ Container cuatro_apis_verificacion-orders-1  Started
+orders disponible en 8002
+auth disponible en 8001
+products disponible en 8003
+users disponible en 8000
+NAME                                  IMAGE                               COMMAND                  SERVICE    CREATED         STATUS         PORTS
+cuatro_apis_verificacion-auth-1       cuatro_apis_verificacion-auth       "/__cacert_entrypoin…"   auth       5 seconds ago   Up 4 seconds   0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp
+cuatro_apis_verificacion-orders-1     cuatro_apis_verificacion-orders     "/app/orders"            orders     5 seconds ago   Up 4 seconds   0.0.0.0:8002->8002/tcp, [::]:8002->8002/tcp
+cuatro_apis_verificacion-products-1   cuatro_apis_verificacion-products   "docker-entrypoint.s…"   products   5 seconds ago   Up 4 seconds   0.0.0.0:8003->8003/tcp, [::]:8003->8003/tcp
+cuatro_apis_verificacion-users-1      cuatro_apis_verificacion-users      "python app.py"          users      5 seconds ago   Up 4 seconds   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+users: creación, lista, consulta por ID y actualización verificadas
+orders: creación, lista, consulta por ID y actualización verificadas
+products: creación, lista, consulta por ID y actualización verificadas
+ Container cuatro_apis_verificacion-orders-1  Stopping
+ Container cuatro_apis_verificacion-users-1  Stopping
+ Container cuatro_apis_verificacion-auth-1  Stopping
+ Container cuatro_apis_verificacion-products-1  Stopping
+ Container cuatro_apis_verificacion-orders-1  Stopped
+ Container cuatro_apis_verificacion-auth-1  Stopped
+ Container cuatro_apis_verificacion-products-1  Stopped
+ Container cuatro_apis_verificacion-users-1  Stopped
+ Container cuatro_apis_verificacion-auth-1  Starting
+ Container cuatro_apis_verificacion-orders-1  Starting
+ Container cuatro_apis_verificacion-products-1  Starting
+ Container cuatro_apis_verificacion-users-1  Starting
+ Container cuatro_apis_verificacion-auth-1  Started
+ Container cuatro_apis_verificacion-orders-1  Started
+ Container cuatro_apis_verificacion-products-1  Started
+ Container cuatro_apis_verificacion-users-1  Started
+orders disponible en 8002
+auth disponible en 8001
+products disponible en 8003
+users disponible en 8000
+ cuatro_apis_verificacion-users-1 copy cuatro_apis_verificacion-users-1:/data/users.db to /tmp/tmpfbrxfvzb/users.db Copying
+ cuatro_apis_verificacion-users-1 copy cuatro_apis_verificacion-users-1:/data/users.db to /tmp/tmpfbrxfvzb/users.db Copied
+users.db verificada
+ cuatro_apis_verificacion-auth-1 copy cuatro_apis_verificacion-auth-1:/data/auth.db to /tmp/tmpfbrxfvzb/auth.db Copying
+ cuatro_apis_verificacion-auth-1 copy cuatro_apis_verificacion-auth-1:/data/auth.db to /tmp/tmpfbrxfvzb/auth.db Copied
+auth.db verificada
+ cuatro_apis_verificacion-orders-1 copy cuatro_apis_verificacion-orders-1:/data/orders.db to /tmp/tmpfbrxfvzb/orders.db Copying
+ cuatro_apis_verificacion-orders-1 copy cuatro_apis_verificacion-orders-1:/data/orders.db to /tmp/tmpfbrxfvzb/orders.db Copied
+orders.db verificada
+ cuatro_apis_verificacion-products-1 copy cuatro_apis_verificacion-products-1:/data/products.db to /tmp/tmpfbrxfvzb/products.db Copying
+ cuatro_apis_verificacion-products-1 copy cuatro_apis_verificacion-products-1:/data/products.db to /tmp/tmpfbrxfvzb/products.db Copied
+products.db verificada
+ Container cuatro_apis_verificacion-users-1  Stopping
+ Container cuatro_apis_verificacion-auth-1  Stopping
+ Container cuatro_apis_verificacion-products-1  Stopping
+ Container cuatro_apis_verificacion-orders-1  Stopping
+ Container cuatro_apis_verificacion-orders-1  Stopped
+ Container cuatro_apis_verificacion-orders-1  Removing
+ Container cuatro_apis_verificacion-orders-1  Removed
+ Container cuatro_apis_verificacion-auth-1  Stopped
+ Container cuatro_apis_verificacion-auth-1  Removing
+ Container cuatro_apis_verificacion-auth-1  Removed
+ Container cuatro_apis_verificacion-products-1  Stopped
+ Container cuatro_apis_verificacion-products-1  Removing
+ Container cuatro_apis_verificacion-products-1  Removed
+ Container cuatro_apis_verificacion-users-1  Stopped
+ Container cuatro_apis_verificacion-users-1  Removing
+ Container cuatro_apis_verificacion-users-1  Removed
+ Network cuatro_apis_verificacion_default  Removing
+ Network cuatro_apis_verificacion_default  Removed
+ Network cuatro_apis_verificacion_default  Creating
+ Network cuatro_apis_verificacion_default  Created
+ Container cuatro_apis_verificacion-orders-1  Creating
+ Container cuatro_apis_verificacion-auth-1  Creating
+ Container cuatro_apis_verificacion-users-1  Creating
+ Container cuatro_apis_verificacion-products-1  Creating
+ Container cuatro_apis_verificacion-orders-1  Created
+ Container cuatro_apis_verificacion-users-1  Created
+ Container cuatro_apis_verificacion-products-1  Created
+ Container cuatro_apis_verificacion-auth-1  Created
+ Container cuatro_apis_verificacion-products-1  Starting
+ Container cuatro_apis_verificacion-users-1  Starting
+ Container cuatro_apis_verificacion-auth-1  Starting
+ Container cuatro_apis_verificacion-orders-1  Starting
+ Container cuatro_apis_verificacion-orders-1  Started
+ Container cuatro_apis_verificacion-users-1  Started
+ Container cuatro_apis_verificacion-auth-1  Started
+ Container cuatro_apis_verificacion-products-1  Started
+orders disponible en 8002
+auth disponible en 8001
+products disponible en 8003
+users disponible en 8000
+ cuatro_apis_verificacion-users-1 copy cuatro_apis_verificacion-users-1:/data/users.db to /tmp/tmp5392v2iz/users.db Copying
+ cuatro_apis_verificacion-users-1 copy cuatro_apis_verificacion-users-1:/data/users.db to /tmp/tmp5392v2iz/users.db Copied
+users.db verificada
+ cuatro_apis_verificacion-auth-1 copy cuatro_apis_verificacion-auth-1:/data/auth.db to /tmp/tmp5392v2iz/auth.db Copying
+ cuatro_apis_verificacion-auth-1 copy cuatro_apis_verificacion-auth-1:/data/auth.db to /tmp/tmp5392v2iz/auth.db Copied
+auth.db verificada
+ cuatro_apis_verificacion-orders-1 copy cuatro_apis_verificacion-orders-1:/data/orders.db to /tmp/tmp5392v2iz/orders.db Copying
+ cuatro_apis_verificacion-orders-1 copy cuatro_apis_verificacion-orders-1:/data/orders.db to /tmp/tmp5392v2iz/orders.db Copied
+orders.db verificada
+ cuatro_apis_verificacion-products-1 copy cuatro_apis_verificacion-products-1:/data/products.db to /tmp/tmp5392v2iz/products.db Copying
+ cuatro_apis_verificacion-products-1 copy cuatro_apis_verificacion-products-1:/data/products.db to /tmp/tmp5392v2iz/products.db Copied
+products.db verificada
+users: persistencia y eliminación verificadas
+orders: persistencia y eliminación verificadas
+products: persistencia y eliminación verificadas
+NAME                                  IMAGE                               COMMAND                  SERVICE    CREATED         STATUS         PORTS
+cuatro_apis_verificacion-auth-1       cuatro_apis_verificacion-auth       "/__cacert_entrypoin…"   auth       6 seconds ago   Up 6 seconds   0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp
+cuatro_apis_verificacion-orders-1     cuatro_apis_verificacion-orders     "/app/orders"            orders     6 seconds ago   Up 6 seconds   0.0.0.0:8002->8002/tcp, [::]:8002->8002/tcp
+cuatro_apis_verificacion-products-1   cuatro_apis_verificacion-products   "docker-entrypoint.s…"   products   6 seconds ago   Up 6 seconds   0.0.0.0:8003->8003/tcp, [::]:8003->8003/tcp
+cuatro_apis_verificacion-users-1      cuatro_apis_verificacion-users      "python app.py"          users      6 seconds ago   Up 6 seconds   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+auth-1      | Auth API en el puerto 8001
+products-1  |
+products-1  | > products-api@1.0.0 start
+products-1  | > node server.js
+products-1  |
+users-1     |  * Serving Flask app 'app'
+users-1     |  * Debug mode: off
+users-1     | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+users-1     |  * Running on all addresses (0.0.0.0)
+users-1     |  * Running on http://127.0.0.1:8000
+users-1     |  * Running on http://172.18.0.3:8000
+users-1     | Press CTRL+C to quit
+users-1     | 172.18.0.1 - - [27/Nov/2026 02:57:32] "GET /users HTTP/1.1" 200 -
+users-1     | 172.18.0.1 - - [27/Nov/2026 02:57:37] "GET /users/1 HTTP/1.1" 200 -
+users-1     | 172.18.0.1 - - [27/Nov/2026 02:57:37] "DELETE /users/1 HTTP/1.1" 200 -
+users-1     | 172.18.0.1 - - [27/Nov/2026 02:57:37] "GET /users/1 HTTP/1.1" 404 -
+users-1     | 172.18.0.1 - - [27/Nov/2026 02:57:37] "GET /users HTTP/1.1" 200 -
+orders-1    | 2026/11/27 02:57:31 Orders API en el puerto 8002
+ Container cuatro_apis_verificacion-users-1  Stopping
+ Container cuatro_apis_verificacion-auth-1  Stopping
+ Container cuatro_apis_verificacion-orders-1  Stopping
+ Container cuatro_apis_verificacion-products-1  Stopping
+ Container cuatro_apis_verificacion-orders-1  Stopped
+ Container cuatro_apis_verificacion-orders-1  Removing
+ Container cuatro_apis_verificacion-orders-1  Removed
+ Container cuatro_apis_verificacion-auth-1  Stopped
+ Container cuatro_apis_verificacion-auth-1  Removing
+ Container cuatro_apis_verificacion-auth-1  Removed
+ Container cuatro_apis_verificacion-products-1  Stopped
+ Container cuatro_apis_verificacion-products-1  Removing
+ Container cuatro_apis_verificacion-products-1  Removed
+ Container cuatro_apis_verificacion-users-1  Stopped
+ Container cuatro_apis_verificacion-users-1  Removing
+ Container cuatro_apis_verificacion-users-1  Removed
+ Network cuatro_apis_verificacion_default  Removing
+ Network cuatro_apis_verificacion_default  Removed
+Demostración completada. Los cuatro volúmenes siguen disponibles.

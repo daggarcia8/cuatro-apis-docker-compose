@@ -64,3 +64,5 @@ python demo.py
 ```
 
 La demostración construye y levanta los servicios, prueba los endpoints en sus cuatro puertos y comprueba los códigos HTTP y las respuestas JSON. Detiene y arranca los contenedores, inspecciona copias de las cuatro bases SQLite y vuelve a comprobar los datos después de eliminar y recrear los contenedores con los mismos volúmenes. Al final muestra el estado y los logs, elimina los registros de ejemplo de Users, Orders y Products mediante HTTP y detiene la arquitectura conservando los volúmenes. Los intentos de login quedan registrados en Auth.
+
+Consulta el [registro de una ejecución completa](demostracion.txt).
