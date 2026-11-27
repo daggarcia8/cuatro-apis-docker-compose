@@ -1,0 +1,25 @@
+services:
+  users:
+    build: ./users
+    ports: ["8000:8000"]
+    volumes: ["users-data:/data"]
+  auth:
+    build: ./auth
+    ports: ["8001:8001"]
+    environment:
+      AUTH_USERNAME: "${AUTH_USERNAME:-demo}"
+      AUTH_PASSWORD: "${AUTH_PASSWORD:-demo-password}"
+    volumes: ["auth-data:/data"]
+  orders:
+    build: ./orders
+    ports: ["8002:8002"]
+    volumes: ["orders-data:/data"]
+  products:
+    build: ./products
+    ports: ["8003:8003"]
+    volumes: ["products-data:/data"]
+volumes:
+  users-data:
+  auth-data:
+  orders-data:
+  products-data:
