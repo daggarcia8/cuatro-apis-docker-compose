@@ -7,7 +7,7 @@ import sqlite3
 import subprocess
 import tempfile
 import time
-from urllib.error import HTTPError, URLError
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from uuid import uuid4
 
@@ -61,7 +61,7 @@ def wait_for_services():
             port, path = SERVICES[name]
             try:
                 http(name, "GET", path)
-            except (URLError, RuntimeError, TimeoutError):
+            except (OSError, RuntimeError):
                 continue
             print(f"{name} disponible en {port}", flush=True)
             pending.remove(name)
